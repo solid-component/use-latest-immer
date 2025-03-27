@@ -1,0 +1,57 @@
+{
+    "name": "use-latest-immer",
+    "version": "0.1.0",
+    "description": "Use immer with React hooks",
+    "main": "dist/use-latest-immer.js",
+    "umd:main": "dist/use-latest-immer.umd.js",
+    "module": "dist/use-latest-immer.module.mjs",
+    "jsnext:main": "dist/use-latest-immer.module.mjs",
+    "react-native": "dist/use-latest-immer.module.mjs",
+    "typings": "dist/index.d.ts",
+    "source": "src/index.ts",
+    "exports": {
+      ".": {
+        "import": {
+          "types": "./dist/index.d.mts",
+          "default": "./dist/use-latest-immer.module.mjs"
+        },
+        "require": {
+          "types": "./dist/index.d.ts",
+          "default": "./dist/use-latest-immer.js"
+        }
+      }
+    },
+    "sideEffects": false,
+    "scripts": {
+      "build": "microbundle && cp ./dist/index.d.ts ./dist/index.d.mts",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/solid-component/use-latest-immer.git"
+    },
+    "files": [
+      "dist/"
+    ],
+    "keywords": [
+      "immer",
+      "react",
+      "hooks"
+    ],
+    "author": "Michel Weststrate",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/solid-component/use-latest-immer/issues"
+    },
+    "homepage": "https://github.com/solid-component/use-latest-immer#readme",
+    "peerDependencies": {
+      "immer": ">=8.0.0",
+      "react": "^16.8.0 || ^17.0.1 || ^18.0.0 || ^19.0.0"
+    },
+    "devDependencies": {
+      "@types/react": "^16.9.56",
+      "immer": "^9.0.0 || ^10.0.0",
+      "microbundle": "^0.15.1",
+      "typescript": "^4.0.5"
+    }
+  }
